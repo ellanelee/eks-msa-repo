@@ -48,7 +48,7 @@ management:
       probability: 0.5  # Docker 환경에서 성능 최적화
   zipkin:
     tracing:
-      endpoint: http://zipkin:9411/api/v2/spans
+      endpoint: http://zipkin-service:9411/api/v2/spans
 
 # OpenTelemetry 설정
 otel:
