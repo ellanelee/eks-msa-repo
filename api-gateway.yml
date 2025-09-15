@@ -29,13 +29,6 @@ spring:
             filters:
               - StripPrefix=1
 
-          - id: payment-service
-            uri: lb://payment-service
-            predicates:
-              - Path=/api/payments/**
-            filters:
-              - StripPrefix=1
-
 management:
   tracing:
     propagation:
